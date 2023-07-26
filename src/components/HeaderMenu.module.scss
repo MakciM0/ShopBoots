@@ -1,0 +1,33 @@
+
+
+.header{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 10px;
+
+    h1{
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    menu{
+        margin-top: 10px;
+        ul{
+            margin-top: 10px;
+            li{
+                margin-left: 30px;
+                a{
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: red;
+                }
+            }
+        }
+    }
+}

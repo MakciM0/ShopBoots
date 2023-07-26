@@ -1,0 +1,53 @@
+.shop_page{
+    background-color: var(--color-gray);
+
+    .shop{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-bottom:  var(--space-medium);
+
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .goods{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .item{
+                width: 40%;
+                background-color: #1f1f1f;
+                color: #fff;
+                margin-top: var(--space-medium);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                h3{
+                    margin-bottom: var(--space-small);
+                }
+    
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin: 0 auto;
+                }
+                p{
+                    margin-top: var(--space-small);
+                }
+                button{
+                    margin-top: var(--space-small);
+                    font-size: 20px;
+                    transition: .3s;
+                }
+            }
+        }
+
+        
+    }
+
+    
+}
+
