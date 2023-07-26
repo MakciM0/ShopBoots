@@ -1,0 +1,105 @@
+.item_page{
+    background-color: var(--color-gray);
+
+    color: #cacaca;
+
+    .item{
+        max-width: 1024px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        display: flex;
+        justify-content: space-between;
+
+        .imgs{
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            img{
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+            }
+            .img_button{
+                margin: 0 auto;
+
+                button{
+                    width: 50px;
+                }
+                .arrow_left{  
+                    border: solid black;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                  
+                    transform: rotate(135deg);
+                    -webkit-transform: rotate(135deg);
+                }
+                  
+                  .arrow_right{
+                    border: solid black;
+                    border-width: 0 3px 3px 0;
+                    display: inline-block;
+                    padding: 3px;
+                  
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+            }  
+        }
+        .info{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 24px;
+            color: #fff;
+            padding-top: 80px;
+
+            p{ 
+                margin-top: 20px; //var
+            }
+            select{
+                font-size: 20px;
+            }
+            option{
+                font-size: 20px;
+            }
+            button{
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.arrow_left{  
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  
+  .arrow_right{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  

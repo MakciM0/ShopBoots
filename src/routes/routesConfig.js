@@ -1,5 +1,5 @@
 import Cart from '../pages/Cart';
-
+import ItemPage from '../pages/ItemPage';
 import Shop from '../pages/Shop';
 
 const routesConfig = [
@@ -10,6 +10,10 @@ const routesConfig = [
     {
         path: '/shop',
         element: <Shop></Shop>
+    },
+    {
+        path: '/shop/:name',
+        element: <ItemPage></ItemPage>
     },
     {
         path: '/cart',

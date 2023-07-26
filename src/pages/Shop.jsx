@@ -1,6 +1,7 @@
 import { dataBase } from "../dataBase/dataBase";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, deleteItem } from "../store/cartSlice";
+import { Link } from "react-router-dom";
 
 import styles from './Shop.module.scss'
 
@@ -27,11 +28,12 @@ const Shop = () => {
                     {dataBase.map(el =>
                     <div key={el} className={styles.item}>
                         <h3>{el.name}</h3>
-                        <img src={"./img/" + el.img} alt={el.name}></img>
+                        <img src={"./img/" + el.img[0]} alt={el.name}></img>
                         <button 
                             onClick={() => handleBuy(el)}>
                             {items.some((item) => item.id === el.id) >  0 ? "Убрать из корзины" : "В Корзину"}
                         </button>
+                        <Link to={`${el.name}`}>Подробнее</Link>
                     </div>
                     )}  
                 </div>

@@ -5,6 +5,7 @@
         max-width: 1024px;
         margin: 0 auto;
         padding-bottom:  var(--space-medium);
+        padding-top:  var(--space-medium);
 
         h1{
             text-align: center;
@@ -27,20 +28,27 @@
 
                 h3{
                     margin-bottom: var(--space-small);
+                    margin-top: var(--space-small);
                 }
     
                 img{
                     width: 300px;
                     height: 300px;
                     margin: 0 auto;
+                    margin-bottom: var(--space-small);
                 }
                 p{
                     margin-top: var(--space-small);
                 }
-                button{
-                    margin-top: var(--space-small);
+                button, a{
+                    margin: 0 auto;
+                    margin-bottom: var(--space-small);  
                     font-size: 20px;
-                    transition: .3s;
+                    width: 50%;
+                    background-color: #fff;
+                    border: none; 
+                    text-decoration: none; 
+                    color: #1f1f1f; 
                 }
             }
         }
