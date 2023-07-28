@@ -15,7 +15,6 @@ export const dataBase = [
             44,
             45
         ],
-        count: 1, // Change
     },
     {
         id: 1,
@@ -32,7 +31,6 @@ export const dataBase = [
             43,
             44
         ],
-        count: 1,
     },
     {
         id: 2,
@@ -49,7 +47,6 @@ export const dataBase = [
             44,
             45
         ],
-        count: 1,
     },
     {
         id: 3,
@@ -66,6 +63,5 @@ export const dataBase = [
             43,
             44
         ],
-        count: 1,
     },
 ]

@@ -4,7 +4,7 @@
     color: #cacaca;
 
     .cart{
-        max-width: 1024px;
+        max-width: var(--main-width);
         margin: 0 auto;
         padding-bottom: 30px;
         h1{
@@ -22,20 +22,20 @@
                 text-align: center;
                 margin-top: var(--space-small);
                 p{
-                    font-size: 20px;
+                    font-size: var(--main-font-size);
                 }
                 img{
                     width: 300px;
                     height: 300px;
                 }
                 span{
-                    font-size: 20px;
+                    font-size: var(--main-font-size);
                     padding: 0 5px;
                     user-select: none;
                     color: #fff;
                 }
                 button{
-                    font-size: 20px;
+                    font-size: var(--main-font-size);
                 }
             }
         }

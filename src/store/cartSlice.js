@@ -14,25 +14,25 @@ const cartSlice = createSlice({
                 name: action.payload.name,
                 price: action.payload.price,
                 img: action.payload.img,
-                count: action.payload.count,
+                count: 1,
             })
             state.total = state.total + action.payload.price;
         },
         deleteItem:(state, action) =>{
-            const isFind = state.goods.find(item => item.id === action.payload.id);
+            const isFind = state.goods.find(item => item.id === action.payload.id); //Поиск нужного элемента
             state.total = state.total - (action.payload.price * isFind.count);
 
             state.goods = state.goods.filter(item => item.id !== action.payload.id);
         },
         minusItem:(state, action) =>{
-            const isFind = state.goods.find(item => item.id === action.payload.id);
+            const isFind = state.goods.find(item => item.id === action.payload.id); //Поиск нужного элемента
             if(isFind.count !== 1){
                 isFind.count -= 1;
                 state.total = state.total - action.payload.price;
             }  
         },
         plusItem:(state, action) =>{
-            const isFind = state.goods.find(item => item.id === action.payload.id);
+            const isFind = state.goods.find(item => item.id === action.payload.id); //Поиск нужного элемента
             isFind.count += 1;
             state.total = state.total + action.payload.price;
         }

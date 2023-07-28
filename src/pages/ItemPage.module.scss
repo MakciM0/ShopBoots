@@ -4,7 +4,7 @@
     color: #cacaca;
 
     .item{
-        max-width: 1024px;
+        max-width: var(--main-width);
         margin: 0 auto;
         padding-bottom: 30px;
         padding-top: 30px;
@@ -59,19 +59,19 @@
             padding-top: 80px;
 
             p{ 
-                margin-top: 20px; //var
+                margin-top: var(--space-small);
             }
             select{
-                font-size: 20px;
+                font-size: var(--main-font-size);
             }
             option{
-                font-size: 20px;
+                font-size: var(--main-font-size);
             }
             button{
                 display: block;
                 margin: 0 auto;
-                margin-top: 20px;
-                font-size: 20px;
+                margin-top: var(--space-small);
+                font-size: var(--main-font-size);
             }
         }
     }

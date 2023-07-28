@@ -11,7 +11,6 @@ const Cart = () => {
 
     const minusCount = (e) => {
         dispatch(minusItem(e)); 
-
     }
 
     const plusCount = (e) => {   
@@ -28,7 +27,7 @@ const Cart = () => {
                             <li className={styles.item}>
                                 <p>Название : {item.name}</p>
                                 <p>Цена : {item.price}</p>
-                                <img src={"./img/" + item.img} alt={item.name}></img>
+                                <img src={"./img/" + item.img[0]} alt={item.name}></img>
                                 <p>Количество : 
                                     <span onClick={() => minusCount(item)}>-</span> 
                                     {item.count} 
